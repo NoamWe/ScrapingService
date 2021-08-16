@@ -1,8 +1,8 @@
-#Goals#
+#Goals
 *Create a system that can parse urls and their sub-urls.
 *We want a DB of URLs and their parsed HTML page.
 
-##How to run##
+##How to run
 1. clone this repo
 2. run these docker commands
 $ docker run -p 6379:6379 -d redis
