@@ -32,6 +32,10 @@ app.post('/scrape',
         res.send("😋 We'll be taking care of businness ");
     });
 
+app.post('/debug', async (req, res) =>{
+    res.json(await urlsRepository.getUrlData())
+})
+
 // Create and start the server
 const server = http.createServer(app);
 const PORT = process.env.PORT || 5000;
